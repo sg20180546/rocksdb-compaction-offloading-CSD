@@ -6,11 +6,15 @@
 ### 3. Research about Remote Compaction (Priority : High) (clear)
 ### <s>4. Hack LevelCompactionPicker::NeedCompaction (Priority : Low) (aborted) </s>
 ### 5. Make User Level MultiThreading Middleware(Primary DB in Host - Secondory DB in CSD) in CSD (Priority : HIGH) (clear)
-### 6. Config CSD emulation environment with 2 Computer(limit of high-speed-conecting of Newport CSD)
-
+### 6. Config CSD emulation environment with 2 Computer(limit of high-speed-conecting of Newport CSD) (Priority : HIGH)
+### 6-1 NFS, PCIe Tunneling
+![image](https://user-images.githubusercontent.com/81512075/189485360-a62ab75d-b0bb-42a3-86e5-8bb61686530a.png)
 
 # Overall Structure
 ![image](https://user-images.githubusercontent.com/81512075/187039960-ae78d32d-faef-47e3-ad59-5eb45bbbadd9.png)
+## Key Component
+![image](https://user-images.githubusercontent.com/81512075/189485259-3d61dcf1-cdfb-464d-925e-6476d9e878a6.png)
+
 
 
 
@@ -27,8 +31,13 @@ make -j 80 db_bench DEBUG_LEVEL=0
 
 
 ---------------------------------------
+---------------------------------------
 
 
+
+
+
+# Code Hacking
 
 
 ## DBImpl::BGWorkCompaction Flow
@@ -39,4 +48,7 @@ make -j 80 db_bench DEBUG_LEVEL=0
 
 ## LevelCompactionPicker::NeedCompaction Flow 
 ![image](https://user-images.githubusercontent.com/81512075/182875334-e9c8bc91-a5fb-4e35-89df-cee8e1644aee.png)
+
+## Options
+![image](https://user-images.githubusercontent.com/81512075/189485315-6e89214e-487b-46a4-8c4c-6de9f7c17be8.png)
 
