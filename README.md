@@ -1,13 +1,13 @@
 # Research Objective : alleviate CPU and IO bandwidth bottleneck by CSD (Computational Storage Drive)
 
 ## To do (22/09/10)
-### 1. Hack Function AddToBuilder (db/compaction/compaction_job.cc) (clear)
-### 2. Hack class ColumnFamilyData (Priority : MID)
-### 3. Research about Remote Compaction (Priority : High) (clear)
+### 1. hack Function AddToBuilder (db/compaction/compaction_job.cc) (clear)
+### 2. hack class ColumnFamilyData (Priority : MID)
+### 3. research about Remote Compaction (Priority : High) (clear)
 ### <s>4. Hack LevelCompactionPicker::NeedCompaction (Priority : Low) (aborted) </s>
-### 5. Make User Level MultiThreading Middleware(Primary DB in Host - Secondory DB in CSD) in CSD (Priority : HIGH) (clear)
-### 6. Config CSD emulation environment with 2 Computer(limit of high-speed-conecting of Newport CSD) (Priority : HIGH)
-### 6-1 NFS, PCIe Tunneling
+### 5. make User Level MultiThreading Middleware(Primary DB in Host - Secondory DB in CSD) in CSD (Priority : HIGH) (clear)
+### 6. config CSD emulation environment with 2 Computer(limit of high-speed-conecting of state-of-art Newport CSD) (Priority : HIGH)
+### 6-1 construct NFS, PCIe Tunneling between Host and CSD
 ![image](https://user-images.githubusercontent.com/81512075/189485360-a62ab75d-b0bb-42a3-86e5-8bb61686530a.png)
 
 # Overall Structure
