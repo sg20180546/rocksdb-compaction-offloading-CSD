@@ -4,10 +4,11 @@
 ### 1. hack Function AddToBuilder (db/compaction/compaction_job.cc) (clear)
 ### 2. hack class ColumnFamilyData (Priority : MID)
 ### 3. research about Remote Compaction (Priority : High) (clear)
-### <s>4. Hack LevelCompactionPicker::NeedCompaction (Priority : Low) (aborted) </s>
+### <s>4. hack LevelCompactionPicker::NeedCompaction (Priority : Low) (aborted) </s>
 ### 5. make User Level MultiThreading Middleware(Primary DB in Host - Secondory DB in CSD) in CSD (Priority : HIGH) (clear)
 ### 6. config CSD emulation environment with 2 Computer(limit of high-speed-conecting of state-of-art Newport CSD) (Priority : HIGH)
 ### 6-1 construct NFS, PCIe Tunneling between Host and CSD
+### 6-2. boot rocksdb on Host, rocksdb-secondary on CSD
 ![image](https://user-images.githubusercontent.com/81512075/189485360-a62ab75d-b0bb-42a3-86e5-8bb61686530a.png)
 
 # Overall Structure
