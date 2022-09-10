@@ -1,6 +1,4 @@
-# Rocksdb version 7.3.1 for "Compaction" code hacking
-
-# Objective : alleviate CPU and Disk IO Bottleneck by CSD-SSD (Computational Storage Drive)
+# Research Objective : alleviate CPU and IO bandwidth bottleneck by CSD (Computational Storage Drive)
 
 ## To do (22/09/10)
 ### 1. Hack Function AddToBuilder (db/compaction/compaction_job.cc) (clear)
