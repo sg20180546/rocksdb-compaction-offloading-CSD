@@ -7,12 +7,14 @@
 ### <s>4. hack LevelCompactionPicker::NeedCompaction (Priority : Low) (aborted) </s>
 ### 5. make User Level MultiThreading Middleware(Primary DB in Host - Secondory DB in CSD) in CSD (Priority : HIGH) (clear)
 ### 6. config CSD emulation environment with 2 Computer(limit of high-speed-conecting of state-of-art Newport CSD) (Priority : HIGH)
-### 6-1 construct PCIe Tunneling,Ethernet,NFS between Host and CSD
+### 6-1 construct PCIe Tunneling,Ethernet,NFS between Host and CSD (clear)
 - connect lan line , set network option ( Address and Netmask )
 - install nfs-common at client // nfs-common, nfs-kernel-server, rpcbind and portmap at server 
 - edit /etc/exports // exportsfs -a at server
 - mount N.N.N.N:/{server_dir_path} {client_dir_path} 
-### 6-2. boot rocksdb on Host, rocksdb-secondary on CSD
+- network sharing
+### 6-2. evaluate some indicator (iperf,sperf, io bandwidth ...)
+### 6-3. boot rocksdb on Host, rocksdb-secondary on CSD
 ![image](https://user-images.githubusercontent.com/81512075/189485360-a62ab75d-b0bb-42a3-86e5-8bb61686530a.png)
 
 # Overall Structure
