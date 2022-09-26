@@ -25,6 +25,7 @@
 ### 7. Mimic specific state-of-art CSD environment (progressing)
 - Downclock CSD Emulation server as low as possible
 - Activate 4 core only
+`sudo chcpu -d 7``sudo chcpu -e 7` `lscpu` `cat /sys/devices/system/cpu/offline`
 
 # Overall Structure
 ![image](https://user-images.githubusercontent.com/81512075/187039960-ae78d32d-faef-47e3-ad59-5eb45bbbadd9.png)
