@@ -14,6 +14,37 @@
 - mount N.N.N.N:/{server_dir_path} {client_dir_path} 
 - network sharing
 ### 6-2. evaluate some indicator (iperf,sperf, io bandwidth ...)
+Indicator	HOST	CSD	
+OS	Ubuntu 20.04.3 LTS	Ubuntu 20.04.4	
+kernel	 5.15.0-48	5.13.0-51	
+CPU	Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz Quad core	Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz Quad core	
+DRAM	16GB	32GB	
+SSD	Samsung SSD 970 EVO 250GB		
+SECTOR SIZE	512 BYTES		
+I/O SIZE	512 BYTES		
+Mount on	/csd	/dev/nvme0n1: /csd	overprovisioned(229GB)
+Ethernet	1Gbp/S		
+Iperf3	117MB/s		
+Ethernet ip	10.42.0.1	10.42.0.2	
+Indicator	HOST	CSD	
+OS	Ubuntu 20.04.3 LTS	Ubuntu 20.04.4	
+kernel	 5.15.0-48	5.13.0-51	
+CPU	Intel(R) Core(TM) i7-4790 CPU @ 3.60GHz Quad core	Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz Quad core	
+DRAM	16GB	32GB	
+SSD	Samsung SSD 970 EVO 250GB		
+SECTOR SIZE	512 BYTES		
+I/O SIZE	512 BYTES		
+Mount on	/csd	/dev/nvme0n1: /csd	overprovisioned(229GB)
+Ethernet	1Gbp/S		
+Iperf3	117MB/s		
+Ethernet ip	10.42.0.1	10.42.0.2	
+![image](https://user-images.githubusercontent.com/81512075/192194314-92176f36-68ed-4838-a893-5a4242890c5b.png)
+
+
+<img src="https://user-images.githubusercontent.com/81512075/192192816-fb60fb97-dee7-4f33-bb3d-0a859453447f.png" width="50%" height="30%"> </img>
+<img src="https://user-images.githubusercontent.com/81512075/192192949-9bedfc0e-8a06-49dc-a6e1-b8128068d3c7.png" width="50%" height="30%"> </img>
+
+
 ### 6-3. boot rocksdb on Host, rocksdb-secondary on CSD
 ![image](https://user-images.githubusercontent.com/81512075/189485360-a62ab75d-b0bb-42a3-86e5-8bb61686530a.png)
 
